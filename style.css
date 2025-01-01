@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif; /* Using Poppins font */
+    font-family: 'Garamond', serif; /* Changed to Garamond font */
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
@@ -91,8 +91,8 @@ h1 {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Style for icons in buttons */
-.fab {
+/* Style for FontAwesome icons */
+.fab, .fas {
     font-size: 2rem;  /* Font size for FontAwesome icons */
 }
 
