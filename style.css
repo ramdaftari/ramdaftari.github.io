@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Garamond', serif; /* Changed to Garamond font */
+    font-family: 'Garamond', serif; /* Using Garamond font */
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
@@ -45,20 +45,22 @@ h1 {
 
 /* Style each button */
 .button {
-    display: inline-block;
-    padding: 15px;
+    display: flex;
+    justify-content: center;  /* Ensure icon is centered horizontally */
+    align-items: center;      /* Ensure icon is centered vertically */
+    width: 50px;              /* Set a fixed width */
+    height: 50px;             /* Set a fixed height */
     background-color: transparent;  /* Removed the black background */
     color: #333; /* Text color for the icons */
-    border-radius: 5px;
+    border-radius: 50%;  /* Round buttons */
     transition: transform 0.3s ease, color 0.3s ease; /* Added transitions for better effect */
     text-decoration: none;
-    text-align: center;
 }
 
-/* Uniform size for both images */
-.button img {
-    width: 40px;  /* Ensure both images are the same size */
-    height: 40px;
+/* Uniform size for both images and icons */
+.button img, .button i {
+    width: 30px;  /* Ensure both images/icons are the same size */
+    height: 30px;
     object-fit: contain;  /* Ensure proper scaling without distorting the aspect ratio */
 }
 
@@ -68,10 +70,10 @@ h1 {
     color: #00bcd4; /* Change text color to blue when hovered */
 }
 
-/* Style for resume image */
+/* Style for the resume image */
 .resume-img {
-    width: 40px;  /* Ensure uniform size */
-    height: 40px;
+    width: 30px;  /* Ensure uniform size */
+    height: 30px;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
@@ -82,8 +84,8 @@ h1 {
 
 /* Style for the X Logo and other icons */
 .social-logo {
-    width: 40px; /* Uniform size */
-    height: 40px;
+    width: 30px; /* Uniform size for the X logo */
+    height: 30px;
     transition: transform 0.3s ease;
 }
 
@@ -93,6 +95,5 @@ h1 {
 
 /* Style for FontAwesome icons */
 .fab, .fas {
-    font-size: 2rem;  /* Font size for FontAwesome icons */
+    font-size: 1.5rem;  /* Font size for FontAwesome icons */
 }
-
