@@ -72,8 +72,18 @@ h1 {
     transform: scale(1.1);  /* Slight zoom effect on hover */
 }
 
+/* Style for the X Logo and other icons */
+.social-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 /* Style for icons in buttons */
 .fab {
     font-size: 2rem;  /* Font size for FontAwesome icons */
 }
-
