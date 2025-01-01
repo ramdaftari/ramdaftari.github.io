@@ -15,6 +15,7 @@ html, body {
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
     background-color: #f0f0f0; /* Soft background color */
+    position: relative;       /* Ensure it is relative for absolute positioning of content */
 }
 
 /* Full-screen background for particles */
@@ -29,7 +30,7 @@ html, body {
 
 /* Main content container */
 .content {
-    position: relative;  /* Ensures content stays above the particles */
+    position: absolute;  /* Absolute position for it to overlay the particles */
     z-index: 1;  /* Bring content to the front */
     text-align: center;
     color: #333;
@@ -37,6 +38,9 @@ html, body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;  /* Optional: Adjust max width of content */
+    width: 100%;       /* Full width up to max-width */
+    box-sizing: border-box;
 }
 
 /* Heading styling */
