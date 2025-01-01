@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram Daftari - Personal Website</title>
+    <title>Ram Daftari</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#links">Links</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+    <header class="header">
+        <div class="header-content">
             <h1>Ram Daftari</h1>
-            <p>Undergraduate student at IIT Kanpur </p>
+            <p>Undergraduate Student, IIT Kanpur</p>
+            <p class="subheading">Exploring the world of mathematics and physics</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about-content">
+                <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div>
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I'm Ram Daftari, an undergraduate student at IIT Kanpur. 
+                        I am passionate about real analysis, multivariable calculus, 
+                        and exploring new computational tools to solve challenging problems. 
+                    </p>
+                </div>
+            </div>
         </section>
-        <section id="history">
+
+        <section class="history">
             <h2>Academic History</h2>
             <ul>
                 <li>IIT Kanpur (2024-Present)</li>
                 <li>Birla High School (2011-2024)</li>
             </ul>
         </section>
-        <section id="courses">
+
+        <section class="courses">
             <h2>Relevant Courses</h2>
             <div class="courses-grid">
                 <div>Real Analysis</div>
@@ -38,13 +46,17 @@
                 <div>Fundamentals of Computing</div>
             </div>
         </section>
-        <section id="links">
+
+        <section class="links">
             <h2>Find Me Online</h2>
-            <a href="#" class="button">LinkedIn</a>
-            <a href="#" class="button">GitHub</a>
-            <a href="#" class="button">Resume</a>
+            <div class="buttons">
+                <a href="#" class="button">LinkedIn</a>
+                <a href="#" class="button">GitHub</a>
+                <a href="#" class="button">Resume</a>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>© 2025 Ram Daftari. All rights reserved.</p>
     </footer>

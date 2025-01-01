@@ -5,120 +5,126 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    color: #333;
+    background: #f8f6f3;
 }
 
-/* Header Styling */
-header {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    padding: 10px 0;
+/* Header */
+.header {
+    background: #004d40;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
 }
-nav ul {
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.header-content p {
+    font-size: 1.2rem;
+}
+.header-content .subheading {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #f1f7f9;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-content h2 {
+    font-size: 2rem;
+    color: #004d40;
+}
+.about-content p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Academic History */
+.history, .courses, .links {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.history h2, .courses h2, .links h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+.history ul {
     list-style: none;
+    padding: 0;
+}
+.history ul li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+}
+.history ul li:last-child {
+    border: none;
+}
+
+/* Courses */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+.courses-grid div {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+.courses-grid div:hover {
+    transform: translateY(-5px);
+}
+
+/* Links */
+.links .buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-nav a {
-    text-decoration: none;
-    color: #00e5ff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-nav a:hover {
-    color: #ff4081;
-}
-
-/* Main Content Styling */
-main {
-    padding: 20px;
-    max-width: 900px;
-    width: 90%;
-}
-
-/* Glassmorphism Card */
-section {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    text-align: center;
-}
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 3px solid #00e5ff;
-}
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
-    color: #00e5ff;
-}
-p, ul {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #ddd;
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-ul li {
-    margin: 5px 0;
-}
-
-/* Courses Grid */
-.courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-}
-.courses-grid div {
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Buttons */
 .button {
-    display: inline-block;
     padding: 10px 20px;
-    margin: 5px;
-    color: #fff;
-    background: linear-gradient(90deg, #00e5ff, #ff4081);
-    border-radius: 25px;
+    background: #004d40;
+    color: white;
     text-decoration: none;
-    font-size: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
     transition: background 0.3s ease;
 }
 .button:hover {
-    background: linear-gradient(90deg, #ff4081, #00e5ff);
+    background: #00796b;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ddd;
+    padding: 20px;
+    background: #004d40;
+    color: white;
     font-size: 0.9rem;
+    margin-top: 50px;
 }
