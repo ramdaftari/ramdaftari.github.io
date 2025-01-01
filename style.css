@@ -1,98 +1,124 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #fff;
-    background: #121212; /* Dark background */
-}
-
-header {
-    background: #1e1e1e; /* Dark header */
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 0;
+}
+nav ul {
     list-style: none;
+    display: flex;
     justify-content: center;
-    padding: 0;
+    gap: 20px;
 }
-
-nav li {
-    margin: 0 20px;
-}
-
 nav a {
     text-decoration: none;
-    color: #00e5ff; /* Neon blue color */
-    font-size: 16px;
+    color: #00e5ff;
+    font-size: 1.2rem;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
-
 nav a:hover {
-    color: #ff4081; /* Hover effect with pink */
+    color: #ff4081;
 }
 
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 900px;
+    width: 90%;
+}
+
+/* Glassmorphism Card */
+section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 5px solid #00e5ff; /* Neon border */
+    margin-bottom: 10px;
+    border: 3px solid #00e5ff;
+}
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #00e5ff;
+}
+p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 5px 0;
 }
 
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background: #1c1c1c; /* Dark section background */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-section {
-    margin-bottom: 40px;
-}
-
+/* Courses Grid */
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
 }
-
 .courses-grid div {
-    padding: 15px;
-    background: #333;
-    border-radius: 5px;
-    text-align: center;
-    transition: background 0.3s ease;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.courses-grid div:hover {
-    background: #00e5ff;
-    color: #fff;
-}
-
+/* Buttons */
 .button {
-    text-decoration: none;
-    padding: 12px 25px;
-    background: #00e5ff;
-    color: #fff;
-    border-radius: 50px;
-    margin: 10px;
     display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff;
+    background: linear-gradient(90deg, #00e5ff, #ff4081);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
     transition: background 0.3s ease;
 }
-
 .button:hover {
-    background: #ff4081; /* Neon pink on hover */
+    background: linear-gradient(90deg, #ff4081, #00e5ff);
 }
 
+/* Footer */
 footer {
     text-align: center;
+    margin-top: 20px;
     padding: 10px 0;
-    background: #1e1e1e;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+    font-size: 0.9rem;
 }
