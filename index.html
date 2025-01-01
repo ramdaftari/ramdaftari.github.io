@@ -3,62 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram Daftari</title>
+    <title>Ram Daftari - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <h1>Ram Daftari</h1>
-            <p>Undergraduate Student, IIT Kanpur</p>
-            <p class="subheading">Exploring the world of mathematics and physics</p>
+    <div id="particles-js"></div>
+    <div class="content">
+        <h1>Ram Daftari</h1>
+        <div class="buttons">
+            <a href="https://www.linkedin.com" target="_blank" class="button">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="button">GitHub</a>
+            <a href="https://twitter.com" target="_blank" class="button">Twitter</a>
+            <a href="resume.pdf" target="_blank" class="button">Resume</a>
         </div>
-    </header>
-
-    <main>
-        <section class="about">
-            <div class="about-content">
-                <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-                <div>
-                    <h2>About Me</h2>
-                    <p>
-                        Hi, I'm Ram Daftari, an undergraduate student at IIT Kanpur. 
-                        I am passionate about real analysis, multivariable calculus, 
-                        and exploring new computational tools to solve challenging problems. 
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="history">
-            <h2>Academic History</h2>
-            <ul>
-                <li>IIT Kanpur (2024-Present)</li>
-                <li>Birla High School (2011-2024)</li>
-            </ul>
-        </section>
-
-        <section class="courses">
-            <h2>Relevant Courses</h2>
-            <div class="courses-grid">
-                <div>Real Analysis</div>
-                <div>Multivariable Calculus</div>
-                <div>Fundamentals of Computing</div>
-            </div>
-        </section>
-
-        <section class="links">
-            <h2>Find Me Online</h2>
-            <div class="buttons">
-                <a href="#" class="button">LinkedIn</a>
-                <a href="#" class="button">GitHub</a>
-                <a href="#" class="button">Resume</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Ram Daftari. All rights reserved.</p>
-    </footer>
+    </div>
+    <script>
+        particlesJS.load('particles-js', 'particles-config.json', function() {
+            console.log('Particles.js loaded!');
+        });
+    </script>
 </body>
 </html>

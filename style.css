@@ -4,127 +4,54 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Georgia', serif;
-    line-height: 1.8;
-    color: #333;
-    background: #f8f6f3;
+
+/* Set the height of the body and html */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-/* Header */
-.header {
-    background: #004d40;
+/* Fullscreen particle background */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send particles behind the content */
+}
+
+/* Center content */
+.content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the particles */
+    text-align: center;
+    padding: 50px;
     color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-.header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-.header-content p {
-    font-size: 1.2rem;
-}
-.header-content .subheading {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-style: italic;
 }
 
-/* About Section */
-.about {
-    padding: 50px 20px;
-    background: #f1f7f9;
-}
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.about-content h2 {
-    font-size: 2rem;
-    color: #004d40;
-}
-.about-content p {
-    color: #555;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Academic History */
-.history, .courses, .links {
-    padding: 50px 20px;
-    max-width: 800px;
-    margin: auto;
-}
-.history h2, .courses h2, .links h2 {
-    font-size: 2rem;
+h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #004d40;
-}
-.history ul {
-    list-style: none;
-    padding: 0;
-}
-.history ul li {
-    padding: 10px 0;
-    font-size: 1.1rem;
-    border-bottom: 1px solid #ddd;
-}
-.history ul li:last-child {
-    border: none;
 }
 
-/* Courses */
-.courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    text-align: center;
-}
-.courses-grid div {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease;
-}
-.courses-grid div:hover {
-    transform: translateY(-5px);
-}
-
-/* Links */
-.links .buttons {
+.buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-.button {
-    padding: 10px 20px;
-    background: #004d40;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    transition: background 0.3s ease;
-}
-.button:hover {
-    background: #00796b;
+    margin-top: 20px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #004d40;
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
     color: white;
-    font-size: 0.9rem;
-    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00bcd4;
 }
