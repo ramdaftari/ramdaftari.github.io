@@ -5,22 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Set the height of the body and html */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Garamond', serif; /* Using Garamond font */
-    display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
-    background-color: #f0f0f0; /* Soft background color */
-    position: relative;       /* Ensure it is relative for absolute positioning of content */
-}
-
 /* Full-screen background for particles */
 #particles-js {
-    position: absolute;  /* Position it relative to the screen */
+    position: fixed;  /* Fix to cover entire screen */
     top: 0;
     left: 0;
     width: 100%;
@@ -28,9 +15,21 @@ html, body {
     z-index: -1;  /* Send particles to the back */
 }
 
+/* Body setup for centering content */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Garamond', serif; /* Using Garamond font */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    background-color: #f0f0f0; /* Soft background color */
+    position: relative;       /* Ensure relative positioning for content */
+}
+
 /* Main content container */
 .content {
-    position: absolute;  /* Absolute position for it to overlay the particles */
+    position: relative;  /* Position it relative to avoid overlap with particles */
     z-index: 1;  /* Bring content to the front */
     text-align: center;
     color: #333;
