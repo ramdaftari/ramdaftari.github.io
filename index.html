@@ -19,9 +19,26 @@
         </div>
     </div>
     <script>
-        particlesJS.load('particles-js', 'particles-config.json', function() {
-            console.log('Particles.js loaded!');
+        // Directly configuring particles.js with JavaScript
+
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 100
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3
+                }
+            }
         });
     </script>
 </body>
 </html>
+
