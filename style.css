@@ -91,3 +91,14 @@ h1 {
     font-size: 1.5rem;
 }
 
+.github, .x-logo {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.social-logo {
+    width: 25px;
+    height: 25px;
+}
+
