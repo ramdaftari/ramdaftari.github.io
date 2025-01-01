@@ -17,81 +17,84 @@ html, body {
     background-color: #f0f0f0; /* Soft background color */
 }
 
-/* Center content in the middle of the page */
-.content {
-    text-align: center;
-    color: #333; /* Dark text for contrast */
-    background-color: #ffffff; /* White background for content */
-    padding: 30px;
-    border-radius: 10px; /* Rounded corners for the content box */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+/* Full-screen background for particles */
+#particles-js {
+    position: absolute;  /* Position it relative to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Send particles to the back */
 }
 
-/* Style the heading */
+/* Main content container */
+.content {
+    position: relative;  /* Ensures content stays above the particles */
+    z-index: 1;  /* Bring content to the front */
+    text-align: center;
+    color: #333;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
 h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #333;
-    font-weight: 600; /* Use a bold weight for the heading */
+    font-weight: 600;
 }
 
-/* Style the button container */
+/* Button container */
 .buttons {
     display: flex;
-    justify-content: center;  /* Center buttons horizontally */
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-/* Style each button */
+/* Button styling */
 .button {
     display: flex;
-    justify-content: center;  /* Ensure icon is centered horizontally */
-    align-items: center;      /* Ensure icon is centered vertically */
-    width: 50px;              /* Set a fixed width */
-    height: 50px;             /* Set a fixed height */
-    background-color: transparent;  /* Removed the black background */
-    color: #333; /* Text color for the icons */
-    border-radius: 50%;  /* Round buttons */
-    transition: transform 0.3s ease, color 0.3s ease; /* Added transitions for better effect */
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: #333;
+    border-radius: 50%;
+    transition: transform 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
 
-/* Uniform size for both images and icons */
 .button img, .button i {
-    width: 30px;  /* Ensure both images/icons are the same size */
+    width: 30px;
     height: 30px;
-    object-fit: contain;  /* Ensure proper scaling without distorting the aspect ratio */
-}
-
-/* Fix for X Logo misalignment (additional vertical adjustment) */
-.social-logo {
-    width: 30px; /* Uniform size for the X logo */
-    height: 30px;
-    transition: transform 0.3s ease;
-    object-fit: contain;  /* Keep the aspect ratio of the X logo */
-    vertical-align: middle; /* Ensure proper vertical alignment */
+    object-fit: contain;
 }
 
 /* Hover effect for buttons */
 .button:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-    color: #00bcd4; /* Change text color to blue when hovered */
+    transform: scale(1.1);
+    color: #00bcd4;
 }
 
-/* Style for the resume image */
+/* Resume image styling */
 .resume-img {
-    width: 30px;  /* Ensure uniform size */
+    width: 30px;
     height: 30px;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
 .resume-img:hover {
-    transform: scale(1.1);  /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
 
-/* Style for FontAwesome icons */
+/* FontAwesome icons styling */
 .fab, .fas {
-    font-size: 1.5rem;  /* Font size for FontAwesome icons */
+    font-size: 1.5rem;
 }
+
