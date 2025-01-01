@@ -40,9 +40,15 @@ html, body {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #ffffff;
     font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #d3d3d3;  /* Light gray color for the subtitle */
+    margin-bottom: 30px;
 }
 
 .buttons {
@@ -57,7 +63,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    color: #ffffff;
+    color: #d3d3d3;  /* Light gray color for buttons */
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.4rem;
