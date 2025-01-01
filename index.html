@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet"> <!-- Using Garamond font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome icons -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script> <!-- Particles.js CDN -->
 </head>
 <body>
+    <!-- Particle animation background -->
+    <div id="particles-js"></div>
+
+    <!-- Main content -->
     <div class="content">
         <h1>Ram Daftari</h1>
         <div class="buttons">
@@ -27,5 +32,74 @@
             </a>
         </div>
     </div>
+
+    <!-- Particles.js Initialization -->
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 100,  // number of particles
+                    "density": {
+                        "enable": true,
+                        "value_area": 800  // area where particles are confined
+                    }
+                },
+                "color": {
+                    "value": "#00bcd4"  // color of particles
+                },
+                "shape": {
+                    "type": "circle",  // shape of particles
+                    "stroke": {
+                        "width": 0,
+                        "color": "#ffffff"  // stroke color (border around particles)
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,  // opacity of particles
+                    "random": false,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,  // size of the particles
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 4,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,  // whether the particles should be linked with lines
+                    "distance": 150,  // distance at which particles are connected
+                    "color": "#00bcd4",  // line color
+                    "opacity": 0.4,  // line opacity
+                    "width": 1  // line width
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,  // movement speed of particles
+                    "direction": "none",  // no specific direction
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",  // particles will go outside the canvas
+                    "bounce": false,
+                    "attract": {
+                        "enable": false
+                    }
+                }
+            },
+            "retina_detect": true  // Detect retina displays for sharpness
+        });
+    </script>
 </body>
 </html>
+
