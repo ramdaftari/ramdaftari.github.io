@@ -359,11 +359,14 @@ h1, h2, h3, h4 {
 
 /* Courses Section */
 .courses-container {
-  display: flex; /* ← override grid for centering */
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
 
 
 .course-card {
