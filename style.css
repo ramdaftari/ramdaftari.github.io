@@ -426,20 +426,22 @@ h1, h2, h3, h4 {
 
 .flip-card {
   perspective: 1000px;
-  height: 200px;
+  height: 220px;
 }
+
 
 .flip-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s ease-in-out;
   transform-style: preserve-3d;
+  transition: transform 0.8s ease;
 }
 
 .flip-card:hover .flip-inner {
   transform: rotateY(180deg);
 }
+
 
 .flip-front,
 .flip-back {
@@ -449,15 +451,17 @@ h1, h2, h3, h4 {
   padding: 15px;
   box-sizing: border-box;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.12); /* brighter */
+  color: #ffffff; /* full white for visibility */
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   backface-visibility: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
+
 
 .flip-front {
   font-weight: bold;
