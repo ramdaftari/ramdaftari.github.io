@@ -5,103 +5,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram Daftari</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Garamond&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div id="particles-js"></div>
     
-    <header>
-        <div class="header-content">
-            <h1>Ram Daftari</h1>
-            <h2 id="subtitle"></h2>
-            <div class="buttons">
-                <a href="https://www.linkedin.com/in/ram-daftari-30b9942a3" target="_blank" class="button">LinkedIn</a>
-                <a href="https://github.com/ramdaftari" target="_blank" class="button">GitHub</a>
-                <a href="mailto:daftariram8@gmail.com" target="_blank" class="button">Mail</a>
-                <a href="assets/Updated_Resume.pdf" target="_blank" class="button">Resume</a>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">RD</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#involvements">Involvements</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </header>
+    </nav>
     
-    <main>
-        <section id="courses">
-            <div class="section-container">
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Ram Daftari</h1>
+                <h2 id="subtitle"></h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ram-daftari-30b9942a3" target="_blank" title="LinkedIn" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramdaftari" target="_blank" title="GitHub" class="social-btn github"><i class="fab fa-github"></i></a>
+                    <a href="mailto:daftariram8@gmail.com" target="_blank" title="Email" class="social-btn email"><i class="fas fa-envelope"></i></a>
+                    <a href="assets/Updated_Resume.pdf" target="_blank" title="Resume" class="social-btn resume"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar">
+                    <span>RD</span>
+                </div>
+                <div class="hero-shape-1"></div>
+                <div class="hero-shape-2"></div>
+                <div class="hero-shape-3"></div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#courses">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+    
+    <section id="courses" class="section">
+        <div class="section-container">
+            <div class="section-header">
                 <h2 class="section-title">Relevant Courses</h2>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <div class="course-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                            </svg>
+                <p class="section-subtitle">Academic foundation and knowledge areas</p>
+            </div>
+            
+            <div class="courses-container">
+                <div class="course-card" data-aos="fade-up">
+                    <div class="course-content">
+                        <div class="course-front">
+                            <div class="course-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Real Analysis</h3>
                         </div>
-                        <h3>Real Analysis</h3>
-                        <p>Study of real numbers, sequences, series, limits, continuity, and the theoretical foundations of calculus.</p>
+                        <div class="course-back">
+                            <p>Study of real numbers, sequences, series, limits, continuity, and the theoretical foundations of calculus.</p>
+                        </div>
                     </div>
-                    <div class="course-card">
-                        <div class="course-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                <polyline points="2 17 12 22 22 17"></polyline>
-                                <polyline points="2 12 12 17 22 12"></polyline>
-                            </svg>
+                </div>
+                
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-content">
+                        <div class="course-front">
+                            <div class="course-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3>Multivariable Calculus</h3>
                         </div>
-                        <h3>Multivariable Calculus</h3>
-                        <p>Extension of calculus to multiple variables, including partial derivatives, multiple integrals, and vector calculus.</p>
+                        <div class="course-back">
+                            <p>Extension of calculus to multiple variables, including partial derivatives, multiple integrals, and vector calculus.</p>
+                        </div>
                     </div>
-                    <div class="course-card">
-                        <div class="course-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="3" y1="9" x2="21" y2="9"></line>
-                                <line x1="3" y1="15" x2="21" y2="15"></line>
-                                <line x1="9" y1="3" x2="9" y2="21"></line>
-                                <line x1="15" y1="3" x2="15" y2="21"></line>
-                            </svg>
+                </div>
+                
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-content">
+                        <div class="course-front">
+                            <div class="course-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <h3>Linear Algebra</h3>
                         </div>
-                        <h3>Linear Algebra</h3>
-                        <p>Study of linear equations, matrices, vector spaces, determinants, and linear transformations.</p>
+                        <div class="course-back">
+                            <p>Study of linear equations, matrices, vector spaces, determinants, and linear transformations.</p>
+                        </div>
                     </div>
-                    <div class="course-card">
-                        <div class="course-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                                <line x1="12" y1="2" x2="12" y2="22"></line>
-                            </svg>
+                </div>
+                
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-content">
+                        <div class="course-front">
+                            <div class="course-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming in C</h3>
                         </div>
-                        <h3>Programming in C</h3>
-                        <p>Fundamentals of C programming language, including data structures, memory management, and algorithms.</p>
+                        <div class="course-back">
+                            <p>Fundamentals of C programming language, including data structures, memory management, and algorithms.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Placeholders for future sections -->
-        <section id="projects">
-            <div class="section-container">
+        </div>
+    </section>
+    
+    <section id="projects" class="section alternate-bg">
+        <div class="section-container">
+            <div class="section-header">
                 <h2 class="section-title">Recent Projects</h2>
-                <p class="placeholder-text">Project content will be added here.</p>
+                <p class="section-subtitle">Applying knowledge to real-world challenges</p>
             </div>
-        </section>
-        
-        <section id="involvements">
-            <div class="section-container">
+            
+            <div class="projects-container">
+                <div class="project-card" data-aos="fade-right">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tetris using DQN</h3>
+                        <div class="project-meta">
+                            <span class="project-org">BCS Club Winter Camp Project</span>
+                            <span class="project-date">Dec 2024 - Feb 2025</span>
+                        </div>
+                        <p class="project-desc">Used PyTorch to apply Deep Q-Learning and CNNs to teach a computer how to play Tetris indefinitely; also implemented reward shaping techniques.</p>
+                        <div class="project-tags">
+                            <span>PyTorch</span>
+                            <span>Deep Q-Learning</span>
+                            <span>CNN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-left">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Biometric Solenoid Lock</h3>
+                        <div class="project-meta">
+                            <span class="project-org">Robotics Club Winter Camp Project</span>
+                            <span class="project-date">Jan 2025</span>
+                        </div>
+                        <p class="project-desc">Built a fingerprint-activated door lock using a fingerprint sensor and a relay module; also implemented person identification.</p>
+                        <div class="project-tags">
+                            <span>Arduino</span>
+                            <span>Electronics</span>
+                            <span>Biometrics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-right">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Climate Change Impacts on Rural Indian Agriculture</h3>
+                        <div class="project-meta">
+                            <span class="project-org">Published in HRCJEF</span>
+                            <span class="project-date">Mar 2025</span>
+                        </div>
+                        <p class="project-desc">A Case Study of Sonarpur, West Bengal. Surveyed randomly sampled farmers and researched informal credit networks, heat-resistant crops, hydroponic cultivation, and GM crops.</p>
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>Agriculture</span>
+                            <span>Climate Change</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="involvements" class="section">
+        <div class="section-container">
+            <div class="section-header">
                 <h2 class="section-title">Other Involvements</h2>
-                <p class="placeholder-text">Involvement content will be added here.</p>
+                <p class="section-subtitle">Activities and achievements beyond academics</p>
             </div>
-        </section>
-    </main>
+            
+            <div class="involvements-container">
+                <div class="involvement-block" data-aos="fade-up">
+                    <div class="involvement-icon">
+                        <i class="fas fa-drone"></i>
+                    </div>
+                    <div class="involvement-content">
+                        <h3>Aerial Robotics</h3>
+                        <p>Working for the IIT team, learning path planning, machine learning, ROS2 and Gazebo.</p>
+                    </div>
+                </div>
+                
+                <div class="involvement-block" data-aos="fade-up">
+                    <div class="involvement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="involvement-content">
+                        <h3>Quizzing</h3>
+                        <p>Represented IIT Kanpur at the Inter-IIT Cultural Meet and qualified for the semifinals of the General Quiz. Part of the contingent to Rendezvous, IIT Delhi and Nihilanth, IIM Lucknow. Led school team to victories in the Boulone Lise Quiz, Mayo College Quiz, Kalakosh, and Namaste Europe Quiz.</p>
+                    </div>
+                </div>
+                
+                <div class="involvement-block" data-aos="fade-up">
+                    <div class="involvement-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="involvement-content">
+                        <h3>Model United Nations</h3>
+                        <p>Secretary General of BHSMUN (2022-2023). Best Delegate at LSAMUN'22, MBWAMUN'21. Outstanding Delegate at LMCMUN'22, LMUN'22. Chaired 5 conferences. Worked in the Calcutta MUN Society.</p>
+                    </div>
+                </div>
+                
+                <div class="involvement-block" data-aos="fade-up">
+                    <div class="involvement-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="involvement-content">
+                        <h3>Debating</h3>
+                        <p>Best Speaker at the SRCC School Debate, BPS Pilani All India English Debates, WB School Debating Championship. Q-Panelist at CDC Parliamentarian Debate.</p>
+                    </div>
+                </div>
+                
+                <div class="involvement-block" data-aos="fade-up">
+                    <div class="involvement-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="involvement-content">
+                        <h3>German</h3>
+                        <p>CEFR B1 Certificate: 81%. Top 5 at the National German Olympiad. International Youth Camp in Goslar, Germany. Led school to Overall 2nd at National German Fest.</p>
+                    </div>
+                </div>
+                
+                <div class="involvement-block" data-aos="fade-up">
+                    <div class="involvement-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="involvement-content">
+                        <h3>Community Service</h3>
+                        <p>Raised ₹2.7 Lakhs for NGOs under the 'Joy of Giving' program. Founded the COVID-19 Relief Fund 'Raahat'. Tutored 50 underprivileged children.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <footer>
-        <p>&copy; 2025 Ram Daftari. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-name">Ram Daftari</div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/ram-daftari-30b9942a3" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ramdaftari" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:daftariram8@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copyright">&copy; 2025 Ram Daftari. All rights reserved.</div>
+        </div>
     </footer>
+    
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     
     <script src="script.js"></script>
     <script>
+        // Particles.js configuration
         particlesJS('particles-js', {
             "particles": {
                 "number": {
@@ -119,9 +305,6 @@
                     "stroke": {
                         "width": 0,
                         "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
                     }
                 },
                 "opacity": {
@@ -158,12 +341,7 @@
                     "random": true,
                     "straight": false,
                     "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
+                    "bounce": false
                 }
             },
             "interactivity": {
@@ -193,6 +371,79 @@
                 }
             },
             "retina_detect": true
+        });
+        
+        // Navbar active state and sticky behavior
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('backToTop');
+            const sections = document.querySelectorAll('.section, .hero-section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            // Add sticky class to navbar
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+                backToTop.classList.add('visible');
+            } else {
+                navbar.classList.remove('sticky');
+                backToTop.classList.remove('visible');
+            }
+            
+            // Highlight active section in navbar
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu after clicking a link
+                if (navLinks.classList.contains('show')) {
+                    navLinks.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+        
+        // Course card flip effect
+        const courseCards = document.querySelectorAll('.course-card');
+        courseCards.forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('flipped');
+            });
         });
     </script>
 </body>
