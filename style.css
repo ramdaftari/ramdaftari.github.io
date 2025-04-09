@@ -359,10 +359,12 @@ h1, h2, h3, h4 {
 
 /* Courses Section */
 .courses-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
+  display: flex; /* ← override grid for centering */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
+
 
 .course-card {
     perspective: 1000px;
